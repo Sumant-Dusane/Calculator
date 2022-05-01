@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_shade">#FFCECECE</color>
+    <color name="black_shade1">#44000000</color>
+    <color name="white_shade1">#FFefeeee</color>
+    <color name="purple">#FF5c02d1</color>
+    <color name="purple_shade">#FF751ee6</color>
+    <color name="purple_shade1">#66751ee6</color>
+
+    <color name="background">#E4EBF5</color>9.32
+    <color name="dark_shadow">#CDD5EA</color>
+    <color name="light_shadow">#F8F9FE</color>
+    <color name="dark_icon">#212121</color>
+
+</resources>
