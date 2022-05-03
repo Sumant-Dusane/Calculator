@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.TextView;
@@ -47,12 +48,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void plusMinusClicked(View view) {
 
-        String num = input.getText().toString();
-        int number = Integer.parseInt(num);
+        String num = result.getText().toString();
+        double number = Double.parseDouble(num);
+        Log.e("TAG", String.valueOf(number));
         if (number > 0){
-            input.setText("-" .concat(num));
+            result.setText(String.valueOf(-Math.abs(number)));
         } else if (number < 0){
-            input.setText(Math.abs(number));
+            result.setText(String.valueOf(Math.abs(number)));
         }
     }
 
@@ -125,6 +127,7 @@ public class MainActivity extends AppCompatActivity {
         int range = res.length();
         if (range > 0){
             input.setText(res.substring(0, range-1));
+            inputt = res.substring(0, range-1);
         }
     }
 
